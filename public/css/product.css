@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a.active {
+  color: red;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+form input {
+  margin-bottom: 1rem;
+  border-color: orange;
+}
+form button {
+  color: orangered;
+  border: 1px solid orange;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
