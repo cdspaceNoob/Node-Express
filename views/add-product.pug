@@ -1,0 +1,18 @@
+extends layouts/main-layout.pug
+
+block styles 
+    link(rel="stylesheet", href="/css/main.css")
+    link(rel="stylesheet", href="/css/product.css")
+
+block children
+        main
+            form(action="/admin/add-product" method="POST")
+                label(for="title") Title
+                input(type="text" name="title" placeholder="Title")
+                label(for="price") Price
+                input(type="number" name="price" placeholder="Price")
+                label(for="imageUrl") Image URL
+                input(type="text" name="imageUrl" placeholder="Image URL")
+                label(for="description") Description
+                input(type="text" name="description" placeholder="Description")
+                button(type="submit") Add Product

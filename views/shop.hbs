@@ -1,0 +1,18 @@
+<main>
+  {{#if hasProducts}}
+    {{#each prods}}
+      <article>
+        <h1>Great book</h1>
+        <div>
+          <img src='' />
+        </div>
+        <div>
+          <h2>$19.9</h2>
+          <p>A very interesting book about programming</p>
+        </div>
+      </article>
+    {{/each}}
+  {{else}}
+    <h1>No Products Found</h1>
+  {{/if}}
+</main>
