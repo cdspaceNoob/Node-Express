@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= docTitle%></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Shop</a></li>
+          <li><a href="/admin/add-product">Add Product</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <% if(prods.length > 0) { for (let product in prods) { %>
+      <article>
+        <h1><%= product.title%></h1>
+        <div>
+          <img
+            src="https://howtodrawforkids.com/wp-content/uploads/2022/07/how-to-draw-an-open-book.jpg"
+          />
+        </div>
+        <div>
+          <h2>$19.9</h2>
+          <p>A very interesting book about programming</p>
+        </div>
+      </article>
+      <% } } else { %>
+      <h1>No Product Found</h1>
+      <% } %>
+    </main>
+  </body>
+</html>
